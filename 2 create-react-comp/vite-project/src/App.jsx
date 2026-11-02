@@ -1,11 +1,16 @@
 // App.jsx
 import Hello from './Hello';
+import Random from './Random';
 
 function App() {
   return (
     <div>
-      <h1>Hello World! James Rumba...</h1>
+      <h1>james is handsome</h1>
       <Hello />
+      <Random />
+       <Random />
+        <Random />
+         <Random />
     </div>
   );
 }
