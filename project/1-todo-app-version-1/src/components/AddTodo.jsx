@@ -1,7 +1,7 @@
 function todoApp() {
   return (
     <div class="container text-center">
-      <div class="row">
+      <div class="row kg-row">
         <div class="col-6">
           <input type="text" placeholder="Enter a new todo..." />
         </div>
@@ -9,7 +9,7 @@ function todoApp() {
           <input type="date" />
         </div>
         <div class="col-2">
-          <button type="button" class="btn-solid theme-success">
+          <button type="button" class="btn-solid theme-success kg-button">
             Add
           </button>
         </div>

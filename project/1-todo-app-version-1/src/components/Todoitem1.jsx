@@ -1,11 +1,14 @@
 function Todoitem1() {
+  let todoName = "Buy milk";
+  let todoDate = "4/10/2026";
+
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-6">Buy milk</div>
-        <div class="col-4">4/10/2026</div>
+    <div class="container ">
+      <div class="row kg-row">
+        <div class="col-6">{todoName}</div>
+        <div class="col-4">{todoDate}</div>
         <div class="col-2">
-          <button type="button" class="btn-solid theme-danger">
+          <button type="button" class="btn-solid theme-danger kg-button">
             Danger
           </button>
         </div>
