@@ -7,7 +7,7 @@ const FoodItems = () => {
   return (
     <ul className="list-group">
       {foodItem.map((item) => (
-        
+        <Item ></Item>
       ))}
     </ul>
   );
