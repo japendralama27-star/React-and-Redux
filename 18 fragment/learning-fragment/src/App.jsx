@@ -7,7 +7,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <h1>Healthy Food</h1>
+      <h1 className="food-heading">Healthy Food</h1>
       <ErrorMessage items={foodItem}></ErrorMessage>
       <FoodItems items={foodItem}></FoodItems>
     </React.Fragment>
