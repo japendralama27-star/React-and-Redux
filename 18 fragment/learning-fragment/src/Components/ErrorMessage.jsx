@@ -1,7 +1,5 @@
-const ErrorMessage = () => {
-  let foodItem = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk", "Ghee"];
-
-  return <>{foodItem.length === 0 ? <h3>i am still hungry</h3> : null}</>;
+const ErrorMessage = ({ items }) => {
+  return <>{items.length === 0 && <h3>I am still hungry</h3>}</>;
 };
 
 export default ErrorMessage;
