@@ -5,12 +5,12 @@ import Todoitem from "./components/Todoitem.jsx";
 import TodoItems from "./components/TodoItems.jsx";
 import { useState } from "react";
 import WelcomeMessage from "./components/WelcomeMessage.jsx";
+import { MdOutlineAddComment } from "react-icons/md";
 
 function App() {
   const [todoItems, setTodoItems] = useState([]);
 
   const handleNewItem = (itemName, itemDueDate) => {
-    console.log(`new item added:${itemName} Date:${itemDueDate}`);
     const newTodoItems = [
       ...todoItems,
       { name: itemName, dueDate: itemDueDate },

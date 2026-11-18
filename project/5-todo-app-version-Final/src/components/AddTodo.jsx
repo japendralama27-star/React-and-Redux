@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { MdOutlineAddComment } from "react-icons/md";
 
 function todoApp({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [dueDate, setDueDate] = useState("");
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
@@ -36,7 +37,7 @@ function todoApp({ onNewItem }) {
             className="btn-solid theme-success kg-button"
             onClick={handleAddButtonClick}
           >
-            Add
+            <MdOutlineAddComment />
           </button>
         </div>
       </div>
