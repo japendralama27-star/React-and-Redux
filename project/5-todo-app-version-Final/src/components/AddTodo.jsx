@@ -11,7 +11,8 @@ function todoApp({ onNewItem }) {
   const handleDateChange = (event) => {
     setDueDate(event.target.value);
   };
-  const handleAddButtonClick = () => {
+  const handleAddButtonClick = (event) => {
+    event.preventDefault();
     onNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
@@ -19,7 +20,7 @@ function todoApp({ onNewItem }) {
 
   return (
     <div className="container text-center">
-      <div className="row kg-row">
+      <form className="row kg-row" onSubmit={handleAddButtonClick}>
         <div className="col-6">
           <input
             type="text"
@@ -32,15 +33,11 @@ function todoApp({ onNewItem }) {
           <input type="date" value={dueDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <button
-            type="button"
-            className="btn-solid theme-success kg-button"
-            onClick={handleAddButtonClick}
-          >
+          <button className="btn-solid theme-success kg-button">
             <MdOutlineAddComment />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
